@@ -1,0 +1,10 @@
+// Routes
+export const ROUTER_CHANGE_ROUTE = 'ROUTER_CHANGE_ROUTE';
+
+// Items
+export const GET_ITEMS = 'GET_ITEMS';
+export const GET_ITEMS_SUCCESS = 'GET_ITEMS_SUCCESS';
+export const GET_ITEMS_FAIL = 'GET_ITEMS_FAIL';
+
+// Layout
+export const LAYOUT_BREAKPOINT_CHANGE = 'LAYOUT_BREAKPOINT_CHANGE';

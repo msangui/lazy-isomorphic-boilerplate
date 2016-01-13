@@ -1,0 +1,39 @@
+// Breakpoints
+@mixin bp-desktop {
+  @media only screen and #{$desktop} {
+    @content;
+  }
+}
+
+@mixin bp-tablet {
+  @media only screen and #{$tablet} {
+    @content;
+  }
+}
+
+@mixin bp-phone {
+  @media only screen and #{$phone} {
+    @content;
+  }
+}
+
+@mixin define-breakpoint($name) {
+  &:after {
+    content: $name;
+    display: none;
+  }
+}
+
+.breakpoints {
+  @include bp-desktop {
+    @include define-breakpoint('desktop');
+  }
+
+  @include bp-tablet {
+    @include define-breakpoint('tablet');
+  }
+
+  @include bp-phone {
+    @include define-breakpoint('phone');
+  }
+}

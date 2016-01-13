@@ -1,0 +1,95 @@
+$phone: '(max-width: #{$screen-xs-max})';
+$tablet: '(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})';
+$desktop: '(min-width: #{$screen-md-min})';
+$desktop-only: '(min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})';
+$large-desktop: '(min-width: #{$screen-lg-min})';
+$large-phone: '(min-width: #{$screen-xs-min}) and (max-width: #{$screen-xs-max})';
+$small-phone: '(max-width: #{$screen-xs-min})';
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+//Viewports
+
+@viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+//Remove Input Shadows on iOS
+input[type='text'],
+input[type='email'],
+input[type='search'],
+input[type='password'] {
+  appearance: none;
+  box-shadow: none;
+  height: $input-default-height;
+  //Fast-Tap Behavior on Webkit mobile
+  touch-action: manipulation;
+}
+
+//media queries to hide
+@media #{$desktop} {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+@media #{$phone} {
+  .hidden-phone {
+    display: none;
+  }
+}
+
+@media #{$tablet} {
+  .hidden-tablet {
+    display: none;
+  }
+}
+
+.bottom-shadow {
+  box-shadow: 3px 3px 1px 0px $soft-shadow-color;
+}
+
+.container {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    &.container-title,
+    &.container-sub-title {
+      color: $color-text;
+    }
+    &.container-title {
+      font-size: $font-size-xxxx-large;
+      font-weight: $font-weight-normal;
+      margin-bottom: 20px;
+    }
+  }
+  h4 {
+    &.container-sub-title {
+      font-size: $font-size-small;
+      font-weight: $font-weight-bold;
+    }
+  }
+}

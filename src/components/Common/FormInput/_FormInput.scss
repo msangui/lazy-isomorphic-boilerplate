@@ -1,0 +1,11 @@
+.form-group {
+  position: relative;
+
+  .form-control {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+}

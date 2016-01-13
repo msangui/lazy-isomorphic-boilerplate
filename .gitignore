@@ -1,0 +1,8 @@
+.idea/
+coverage
+node_modules/
+static/dist/*
+logs/filelog-*
+version.json
+webpack-stats.json
+npm-debug.log

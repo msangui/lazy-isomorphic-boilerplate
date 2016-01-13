@@ -1,8 +1,16 @@
-# lazy-isomorphic-boilerplate
+#Lazy Isomorphic Boileplate
+##initialize
+``npm install``
 
-## Development
-npm run dev
+##development
+``npm run dev``
 
-## Production
+
+##production
+``
 npm run build
+``
+
+``
 npm run start
+``
